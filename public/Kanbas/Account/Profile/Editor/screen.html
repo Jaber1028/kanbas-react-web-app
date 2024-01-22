@@ -1,0 +1,118 @@
+<!-- Now lets focus on implementing the Edit Profile screen. In /public/Kanbas/ Account/Profile/Edit/index.html, implement the form shown here on the right. In the same directory, in /public/Kanbas/Account/Profile/Edit/screen.html, combine the form in index.html with the Kanbas Navigation and Account Navigation to create the Edit Profile screen. Clicking the Edit Profile button should navigate to Edit/screen.html. Clicking Save Profile or Cancel Editing navigates back to Profile/screen.html. Use HTML tables to layout the columns as shown. Use HTML lists and anchors to render the navigation links as shown. Only the links Account, Profile, Courses, Home, Assignments, and Grades need to work. Configure other links with  href="#"  for now, since we don't yet care where they navigate to. Feel free to use your own username, first name, last name, contact, biography, title, URL, etc.
+ -->
+ <html>
+    <head>
+    	<title></title>
+    </head>
+    <body>
+    	<table width="100%">
+            <tbody>
+                <tr>
+                    <td valign="top">
+                        <ul>
+                            <li>
+                                <a href="/Kanbas/Account/Profile/screen.html"> Account</a>
+                            </li>
+                            <li>
+                                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+                            </li>
+                            <li>
+                                <a href="/Kanbas/Calendar/index.html">Calendar</a>
+                            </li>
+                            <li>
+                                <a href="/Kanbas/Inbox/index.html">Inbox</a>
+                                <li>
+                                    <a href="/Kanbas/Courses/History/screen.html"> History</a>
+                                  </li>
+                                  <li>
+                                    <a href="/Kanbas/Courses/Settings/screen.html"> Studio</a>
+                                  </li>
+                                  <li>
+                                    <a href="/Kanbas/Courses/Commons/screen.html"> Commons</a>
+                                  </li>
+                                  <li><a href="/Kanbas/Courses/Help/index.html"> Help</a></li>
+                            </li>
+                        </ul>
+                    </td>
+                    <td valign="top">
+                    <ul>
+                        <li>
+                                <a href="#">Notifications</a>
+                            </li>
+                            <li>
+                                <a href="/Kanbas/Account/Profile/screen.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Files</a>
+                            </li>
+                            <li>
+                                <a href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a href="#">ePortfolios</a>
+                            </li>
+                            <li>
+                                <a href="#">Shared Content</a>
+                            </li>
+                            <li>
+                                <a href="#">The Hub</a>
+                            </li>
+                            <li>
+                                <a href="#">Qwickly Course Tools</a>
+                            </li>
+                            <li>
+                                <a href="#">Global Announcements</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h1>Profile</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form id="text-fields">
+                            <label for="text-fields-first-name">First name:</label>
+                            <input type="text" id="text-fields-first-name"
+                                    placeholder="Jacob" value="Jacob"/><br/>
+                            <label for="text-fields-last-name">Last name:</label>
+                            <input type="text" id="text-fields-last-name"
+                                    placeholder="Aberasturi" value="Aberasturi"/><br/>
+                        </form>
+                        <label>Pronouns:</label>
+                        <form id="select">
+                        <select>
+                            <option value="volvo">he / him</option>
+                            <option value="saab">she /her</option>
+                            <option value="mercedes">they / them</option>
+                            <option value="audi">Other</option>
+                        </select>
+                        </form>
+                        <form id="textarea">
+                            <label>Contact:</label><br/>
+                            <textarea cols="30" rows="10">Northeastern email: aberasturi.j@....
+                                Phone: 312321312312.</textarea>
+                        </form>
+                        <form id="textarea">
+                            <label>Biography:</label><br/>
+                            <textarea cols="30" rows="10">I am a third year Computer Science with a concentration in Software.</textarea>
+                        </form>
+                            <h4>Links</h4>
+                            <p> <a href="#"> Youtube</p>
+                        </form>
+
+                        <button><a href="/Kanbas/Account/Profile/screen.html"> Save Profile </a></button>
+                        <button><a href="/Kanbas/Account/Profile/screen.html"> Cancel Editing </a></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
