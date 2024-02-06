@@ -1,126 +1,113 @@
-<html>
-  <head> </head>
-  <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="/Kanbas/Account/Profile/screen.html"> Account</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Calendar/index.html">Calendar</a>
-              </li>
-              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-              <li>
-                <a href="/Kanbas/Courses/History/screen.html"> History</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Settings/screen.html"> Studio</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Commons/screen.html"> Commons</a>
-              </li>
-              <li><a href="/Kanbas/Courses/Help/index.html"> Help</a></li>
+  <html>
+    <head>
+      <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/libs/bootstrap/bootstrap.css" />
+      <link rel="stylesheet" href="/Kanbas/styles.css" />
+      <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+      <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    </head>
+    <body>
+      <table width="100%">
+        <tbody>
+          <tr>
+            <td valign="top">  
+              <ul class="wd-kanbas-navigation">
+                <li><a href="/Kanbas/Dashboard/screen.html""><i class="fa fa-paw"></i> NEU</a></li>
+                <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i>Account</a></li>
+                <li class="wd-active">
+                  <a href="/Kanbas/Dashboard/screen.html">
+                    <i class="fa fa-tachometer"></i> Dashboard</a>
+                </li>
+                <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a> </li>
+                <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox"></i> <br> Inbox</a></li>
+                <li><a href="#"><i class="fa fa-history"></i> History</a></li>
+                <li><a href="#"><i class="fa fa-university"></i> Studio</a></li>
+                <li><a href="#"><i class="fa fa-creative-commons"></i> Commons</a></li>
+                <li><a href="#"><i class="fa fa-info-circle"></i> <br> Help</a></li>
+              </ul>
             </ul>
-          </td>
-          <td valign="top">
-            <ul>
+        </td>
+            <td valign="top">    <ul class="wd-navigation">
               <li>
                 <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
               </li>
-              <li>
-                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
-              </li>
-              <li><a href="/Kanbas/Courses/Piazza/screen.html"> Piazza</a></li>
+              <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
+              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
               <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
               <li>
-                <a href="/Kanbas/Courses/Assignments/screen.html">
-                  Assignments</a
-                >
+                <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
+              </li>
+            </li>
+            <li>
+              <a href="#"> People</a>
+            </li>
+              <li>
+                <a href="#"> Panopto Video</a>
               </li>
               <li>
-                <a href="#"> People</a>
+                <a href="#"> Discussions</a>
+              </li>
+              <li><a href="#"> Announcements</a></li>
+              <li><a href="#"> Pages</a></li>
+              <li>
+                <a href="#">
+                  Files</a
+                >
               </li>
                 <li>
-                  <a href="#"> Panopto Video</a>
+                  <a href="#"> Rubrics</a>
                 </li>
                 <li>
-                  <a href="#"> Discussions</a>
+                  <a href="#"> Outcomes</a>
                 </li>
-                <li><a href="#"> Announcements</a></li>
-                <li><a href="#"> Pages</a></li>
+                <li><a href="#"> Syllabus</a></li>
                 <li>
                   <a href="#">
-                    Files</a
+                    Settings</a
                   >
                 </li>
-                  <li>
-                    <a href="#"> Rubrics</a>
-                  </li>
-                  <li>
-                    <a href="#"> Outcomes</a>
-                  </li>
-                  <li><a href="#"> Collaborations</a></li>
-                  <li><a href="#"> Syllabus</a></li>
-                  <li>
-                    <a href="#">
-                      Settings</a
-                    >
-                  </li>
             </ul>
-          </td>
-          <td valign="top">
-            <table>
-              <tbody>
-                <td>
-                  <select>
-                    <option>Gradboook</option>
-                    <option>Change Gradboook View</option>
-                    <option>Traditional Gradboook</option>
-                    <option>Individual Gradboook</option></select
-                  ><br />
-                  <label>Student Names</label><br />
-                  <input placeholder="Search Students" /><br />
-                  <select>
-                    <option>Alice Wonderland</option>
-                    <option>Charlie Brown</option>
-                    <option>Bob Marley</option>
-                    <option>Jaber</option>
-                  </select>
-                </td>
-                <td>
-                  <button>Import</button>
-                  <select>
-                    <option>Export</option>
-                    <option>Export Current Gradebook</option>
-                    <option>Export Entire Gradbook</option></select
-                  ><br />
-                  <label>Assignment Names</label><br />
-                  <input placeholder="Search Assignments" /><br />
-                  <select>
-                    <option>A1</option>
-                    <option>A2</option>
-                    <option>A3</option>
-                    <option>A4</option>
-                    <option>Q1</option>
-                    <option>Q2</option>
-                    <option>Q3</option>
-                  </select>
-                </td>
-              </tbody>
-            </table>
-            <button>Apply Filters</button>
-            <table border="1" width="100%">
+        </td>
+            <td valign="top">
+              <table width="100%">
+                  <tbody>
+                      <tr>
+                          <td>
+                              <select>
+                                  <option>Gradebook</option>
+                                  <option>Change Gradebook View</option>
+                                  <option>Traditional Gradebook</option>
+                                  <option>Individual Gradebook</option>
+                              </select> <br/>
+                              <label>Student Names</label><br/>
+                              <input placeholder="Search Students"/><br/>
+                              <select>
+                                  <option>Alice</option>
+                                  <option>Bob</option>
+                                  <option>Charlie</option>
+                              </select>
+                          </td>
+                          <td>
+                              <button>Import</button>
+                              <select>
+                                  <option>Export</option>
+                              </select><br/>
+                              <label>Assignment names</label><br/>
+                              <input placeholder="Search Assignments"/><br/>
+                              <select>
+                                  <option>Assignment 1</option>
+                                  <option>Assignment 2</option>
+                                  <option>Assignment 3</option>
+                              </select>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div class="table-responsive">
+              <table class="table">
               <thead>
-                <tr>
+                  <tr>
                   <th rowspan="2">Student Names</th>
                   <th>A1</th>
                   <th>A2</th>
@@ -131,73 +118,79 @@
                   <th>Q1</th>
                   <th>Q2</th>
                   <th>Q3</th>
-                </tr>
-                <tr>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                  <th>0 - 100</th>
-                </tr>
+                  <th>Q4</th>
+                  <th>Q5</th>
+                  <th>Q6</th>
+                  </tr>
+                  <tr>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  <th>Out of 100</th>
+                  </tr>
               </thead>
               <tbody>
-                <tr>
+                  <tr>
                   <td>Alice Wonderland</td>
                   <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td><input type="number" value="100" /></td>
-                  <td>100</td>
+                  <td><input type="number" value="100"></td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
-                </tr>
-                <tr>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td><input type="number" value="100"></td>
+                  <td>100</td>
+                  </tr>
+                  </tr>
+                  </tr>
+                  <tr>
+                  <td>Bob Marley</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td><input type="number" value="100"></td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td><input type="number" value="100"></td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td>100</td>
+                  </tr>
+                  <tr>
                   <td>Charlie Brown</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td><input type="number" value="100" /></td>
-                </tr>
-                <tr>
-                  <td>Bob Marley</td>
-                  <td>100</td>
-                  <td><input type="number" value="100" /></td>
+                  <td><input type="number" value="100"></td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
                   <td>100</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Jaber</td>
-                  <td>40</td>
-                  <td><input type="number" value="10" /></td>
-                  <td>30</td>
-                  <td>90</td>
-                  <td>30</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>100</td>
-                </tr>
+                  </tr>
               </tbody>
-            </table>
+              </table>
+            </div>
           </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
+          </tr>
+        </tbody>
+      </table>
+    </body>
+  </html>

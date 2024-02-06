@@ -1,197 +1,192 @@
 <html>
   <head>
-    <h1>Editor</h1>
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
   </head>
   <body>
     <table width="100%">
       <tbody>
         <tr>
           <td valign="top">
-            <ul>
-              <li>
-                <a href="/Kanbas/Account/Profile/screen.html"> Account</a>
+            <ul class="wd-kanbas-navigation">
+              <li><a href="/Kanbas/Dashboard/screen.html""><i class="fa fa-paw"></i> NEU</a></li>
+              <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i>Account</a></li>
+              <li class="wd-active">
+                <a href="/Kanbas/Dashboard/screen.html">
+                  <i class="fa fa-tachometer"></i> Dashboard</a>
               </li>
-              <li>
-                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Calendar/index.html">Calendar</a>
-              </li>
-              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-              <li>
-                <a href="/Kanbas/Courses/History/screen.html"> History</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Settings/screen.html"> Studio</a>
-              </li>
-              <li>
-                <a href="/Kanbas/Courses/Commons/screen.html"> Commons</a>
-              </li>
-              <li><a href="/Kanbas/Courses/Help/index.html"> Help</a></li>
+              <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a> </li>
+              <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+              <li><a href="#"><i class="fa fa-inbox"></i> <br> Inbox</a></li>
+              <li><a href="#"><i class="fa fa-history"></i> History</a></li>
+              <li><a href="#"><i class="fa fa-university"></i> Studio</a></li>
+              <li><a href="#"><i class="fa fa-creative-commons"></i> Commons</a></li>
+              <li><a href="#"><i class="fa fa-info-circle"></i> <br> Help</a></li>
             </ul>
-            </td>
-            <td valign="top">
-              <ul>
+          </td>
+          <td valign="top">
+            <ul class="wd-navigation">
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
+              </li>
+              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Assignments</a
+                >
+              </li>
+            </li>
+            <li>
+              <a href="#"> People</a>
+            </li>
+              <li>
+                <a href="#"> Panopto Video</a>
+              </li>
+              <li>
+                <a href="#"> Discussions</a>
+              </li>
+              <li><a href="#"> Announcements</a></li>
+              <li><a href="#"> Pages</a></li>
+              <li>
+                <a href="#">
+                  Files</a
+                >
+              </li>
                 <li>
-                  <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+                  <a href="#"> Rubrics</a>
                 </li>
                 <li>
-                  <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
-                </li>
-                <li><a href="/Kanbas/Courses/Piazza/screen.html"> Piazza</a></li>
-                <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+                  <a href="#"> Outcomes</a>
+                </li> 
+                <li><a href="#"> Syllabus</a></li>
                 <li>
-                  <a href="/Kanbas/Courses/Assignments/screen.html">
-                    Assignments</a
+                  <a href="#">
+                    Settings</a
                   >
                 </li>
-                <li>
-                  <a href="#"> People</a>
-                </li>
-                  <li>
-                    <a href="#"> Panopto Video</a>
-                  </li>
-                  <li>
-                    <a href="#"> Discussions</a>
-                  </li>
-                  <li><a href="#"> Announcements</a></li>
-                  <li><a href="#"> Pages</a></li>
-                  <li>
-                    <a href="#">
-                      Files</a
-                    >
-                  </li>
-                    <li>
-                      <a href="#"> Rubrics</a>
-                    </li>
-                    <li>
-                      <a href="#"> Outcomes</a>
-                    </li>
-                    <li><a href="#"> Collaborations</a></li>
-                    <li><a href="#"> Syllabus</a></li>
-                    <li>
-                      <a href="#">
-                        Settings</a
-                      >
-                    </li>
-              </ul>
-            </td>
-            <td valign="top">
+            </ul>
+          </td>
+          <td valign="top">
+            <form action="/Kanbas/Courses/Assignments/screen.html">
+              <label>Assignment Name</label><br />
+              <input
+                type="text"
+                name="wd-assignment-name"
+                value="Assignment 1"
+              /><br />
+
+              <label>Assignment Description</label><br />
+              <textarea name="wd-assignment-description" rows="4" cols="50">
+              This is the first assignment for Web Dev.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum laudantium veniam optio, dicta quas voluptas facilis alias laborum voluptatibus maiores ducimus dolorem molestiae labore, harum rerum? Quis, quam vitae!
+            </textarea
+              ><br />
               <table>
                 <tbody>
                   <tr>
-                    <td><input placeholder="Search for Assignments"</td>
+                    <td><label>Points</label></td>
                     <td>
-                      <button>+ Group</button>
-                      <button>+ Assignment</button>
+                      <input type="number" value="100" min="0" max="100" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Assignment Group</label></td>
+                    <td>
                       <select>
-                        <option>Edit Assignment Dates</option>
-                        <option>Assignment group weights</option>
+                        <option>ASSIGNMENT</option>
+                        <option>QUIZ</option>
+                        <option>EXAM</option>
+                        <option>PROJECT</option>
                       </select>
                     </td>
                   </tr>
+                  <tr>
+                    <td valign="top"><label>Submission Type</label></td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="TEXT"
+                        checked
+                      />
+                      <label>Text Entry</label> <br />
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="WEBSITE"
+                      />
+                      <label>Website URL</label> <br />
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="MEDIA"
+                      />
+                      <label>Media Recordings</label> <br />
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="FILE"
+                        checked
+                      />
+                      <label>File Uploads</label> <br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Asign</label></td>
+                    <td>
+                      Due:<br />
+                      <input
+                        type="date"
+                        name="wd-assignment-due-date"
+                        min="2023-01-05"
+                        max="2023-01-23"
+                        value="2023-01-15"
+                      /><br />
+                      Available from:<br />
+                      <input
+                        type="date"
+                        name="wd-assignment-available-date"
+                        min="2023-01-05"
+                        max="2023-01-23"
+                        value="2023-01-15"
+                      /><br />
+                      Available unitl:<br />
+                      <input
+                        type="date"
+                        name="wd-assignment-available-until-date"
+                        min="2023-01-05"
+                        max="2023-01-23"
+                        value="2023-01-15"
+                      /><br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label></label></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><label></label></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><label></label></td>
+                    <td></td>
+                  </tr>
                 </tbody>
               </table>
-            <table> 
-              <tbody>
-                <br />
-                <tr>
-                  <td>Assignment Name</td>
-                  <td><input type="text" name="Assignment Name" value="A1"></td>
-                </tr>
-                <tr>
-                  <td>Assignment Description</td>
-                  <td><input type="text" name="Assignment Description" value="HTML tutorial and kanbas setup">
-                    </td><br />
-                </tr>
-                <tr>
-                <tr style="height: 30px;">
-                </tr>
-
-                <tr>
-                  <td>Points</td>
-                  <td><input type="text" name="Points" value = 10></td>
-                </tr>
-
-                  <td>Display Grade As</td>
-                  <td><select>
-                    <option>Percentage</option>
-                    <option>Complete/Incomplete</option>
-                    <option>Points</option>
-                    <option>Letter Grade</option>
-                    <option>Not Graded</option>
-                  </select></td>
-                  <tr>
-                    <tr style="height: 30px;">
-                    </tr>
-                  <tr>
-                <tr>
-                  <td>Due</td>
-                  <td><input type="date" name="Due" value = 2024-01-24></td>
-                </tr>
-                <tr>
-                  <td>Available from</td>
-                  <td><input type="date" name="Available from" value = "2024-01-11"></td>
-                </tr>
-                <tr>
-                  <td>Until</td>
-                  <td><input type="date" name="Until" value = 2024-01-24></td>
-                </tr>
-                <tr>
-                  <tr style="height: 25px;">
-                  </tr>
-                <tr>
-                  <td>Submission Type</td>
-                  <td><select>
-                    <option>Online</option>
-                    <option>Hybrid</option>
-                    <option>In Person</option>
-                  </select> </td>
-
-                </tr>
-                <tr>
-                  <td>Online Entry Options</td>
-                    <td>
-                      
-                    <br />
-                    <input type="checkbox" name="File Upload">File Upload<br />
-                    <input type="checkbox" name="Text Entry">Text Entry<br />
-                    <input type="checkbox" name="Website URL">Website URL<br />
-                    <input type="checkbox" name="Media Recordings">Media Recordings<br />
-                    <input type="checkbox" name="Student Annotation">Student Annotation<br />
-
-                  </td>
-                </tr>
-                <tr>
-                  <tr style="height: 30px;">
-                  </tr>
-                <tr>
-                  <td>Available to</td>
-                  <td><select>
-                    <option>Everyone</option>
-                    <option>Course Groups</option>
-                    <option>Individual Students</option>
-                  </select></td>
-                  <tr>
-                    <tr style="height: 20px;">
-                    </tr>
-                <tr>
-                  <td>Group Assignments</td>
-                  <td><input type="checkbox" name="Group Assignments"></td>
-                </tr>
-                <tr>
-                  <td>Peer Reviews</td>
-                  <td><input type="checkbox" name="Peer Reviews"></td>
-                </tr>
-                <tr>
-                  <td><button><a href = "/Kanbas/Courses/Assignments/screen.html">Cancel</a></button></td>
-                  <td><button><a href = "/Kanbas/Courses/Assignments/screen.html">Save</a></button></td>
-              </tr>
-              </tbody>
-              </table>
-              </body>
-              </html>
-        
+              <button>Cancel</button>
+              <button>Save</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
