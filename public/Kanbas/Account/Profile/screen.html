@@ -1,34 +1,51 @@
 <html>
-<head>   <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/libs/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" /></head>
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
 <body>
-    <table width="100%">
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul class="wd-kanbas-navigation">
-                        <li><a href="/Kanbas/Dashboard/screen.html""><i class="fa fa-paw"></i> NEU</a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i>Account</a></li>
-                        <li class="wd-active">
-                          <a href="/Kanbas/Dashboard/screen.html">
-                            <i class="fa fa-tachometer"></i> Dashboard</a>
-                        </li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a> </li>
-                        <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-                        <li><a href="#"><i class="fa fa-inbox"></i> <br> Inbox</a></li>
-                        <li><a href="#"><i class="fa fa-history"></i> History</a></li>
-                        <li><a href="#"><i class="fa fa-university"></i> Studio</a></li>
-                        <li><a href="#"><i class="fa fa-creative-commons"></i> Commons</a></li>
-                        <li><a href="#"><i class="fa fa-info-circle"></i> <br> Help</a></li>
-                      </ul>
-                        </li>
-                    </ul>
-                </td>
-                <td valign="top">
-                <ul class = "wd-navigation">
+    <div class="d-flex wd-k"> 
+      
+        <div class="flex-container">
+        
+          <nav class="Navbar wd-kanbas-navigation" data-bs-theme="dark">
+            <div class="navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="wd-kanbas-navigation">
+                  <li><a href="/Kanbas/Dashboard/screen.html"><i class="fa fa-paw"></i> NEU</a></li>
+                  <li><a href="/Kanbas/Account/Profile/screen.html"><i class="fa fa-user"></i>Account</a></li>
+                  <li>
+                    <a href="/Kanbas/Dashboard/screen.html">
+                      <i class="fa fa-tachometer"></i> Dashboard</a>
+                  </li>
+                  <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html"><i class="fa fa-book"></i>Courses</a> </li>
+                  <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                  <li><a href="#"><i class="fa fa-inbox"></i> <br> Inbox</a></li>
+                  <li><a href="#"><i class="fa fa-history"></i> History</a></li>
+                  <li><a href="#"><i class="fa fa-university"></i> Studio</a></li>
+                  <li><a href="#"><i class="fa fa-creative-commons"></i> Commons</a></li>
+                  <li><a href="#"><i class="fa fa-info-circle"></i> <br> Help</a></li>
+                </ul>
+              </ul>
+            </div>
+          </nav>
+          <div class="d-none d-md-block">
+            <input
+            class="navbar-toggler"
+            type="checkbox"
+            id="navbarButton"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+          <label for="navbarButton" class="navbar-toggler-icon" >    <i class="fa fa-bars"></i>  </label>
+  
+            <ul class="wd-navigation" id="navbar">
                     <li>
                             <a href="#">Notifications</a>
                         </li>
@@ -57,6 +74,11 @@
                             <a href="#">Global Announcements</a>
                         </li>
                     </ul>
+          </div>
+        </div>
+        <div>
+                <td valign="top">
+
                 </td>
                 <td valign="top">
                     <table>
@@ -86,5 +108,6 @@
                   </tr>
                 </tbody>
               </table>
+        </div>
             </body>
             </html>

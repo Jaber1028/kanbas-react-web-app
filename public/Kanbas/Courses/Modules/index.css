@@ -26,6 +26,11 @@
   border-top: 1px solid gray !important;
   border-left: 2px solid green;
 }
+.d-flex.wd-k {
+  display: flex;
+  height: 100vh;
+  
+}
 
 .wd-modules > li {
   margin-bottom: 20px;
@@ -33,9 +38,8 @@
 
 .flex-container {
   display: flex;
-  position: relative;
-}
-
+  overflow: auto;
+} 
 .d-none.d-md-block {
   position: relative;
 }
@@ -77,8 +81,7 @@
 
 .navbar-toggler-icon {
   cursor: pointer;
-  position: relative  ;
-  top: 10px; /* Adjust as needed */ 
+  position: relative;
   left: -50;
 }
 
@@ -95,4 +98,30 @@
   #navbarButton:checked ~ .flex-container #main-content {
     margin-left: 0px;
   }
+}
+
+.wd-dropdown {
+  background-color: black;
+  list-style: none;
+  display: inline-flex;
+}
+.wd-dropdown li {
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-right: 33%;
+  padding-bottom: 10px;
+  color : white;
+  display: inline-flex;
+  text-align: center;
+}
+
+.wd-dropdown li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  
+}
+.wd-dropdown:target {
+  display: block;
 }

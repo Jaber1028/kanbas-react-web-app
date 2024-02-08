@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
   </head>
   <body>
+    <div class="d-md-none row">
+      <ul class="wd-dropdown" id="dropdown">
+          <li><a href="/Kanbas/Navigation/index.html"><i class="fa fa-bars fa-lg"></i></a></li>
+          <li>Web Development<br />Modules</li>
+          <li><a href="/Kanbas/Courses/Navigation/index.html"><i class="fa fa-chevron-down fa-lg"></i> </a></li>
+          <li><a href="#"><i class="fa fa-times fa-lg"></i></a></li>
+      </ul>
+  </div>
      <div class="d-flex wd-k"> 
       
       <div class="flex-container">
       
-        <nav class="Navbar" data-bs-theme="dark">
+        <nav class="Navbar wd-kanbas-navigation" data-bs-theme="dark">
           <div class="navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <ul class="wd-kanbas-navigation">
@@ -47,7 +55,7 @@
         <label for="navbarButton" class="navbar-toggler-icon" >    <i class="fa fa-bars"></i>  </label>
 
           <ul class="wd-navigation" id="navbar">
-            <li>
+            <li class="wd-active">
               <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
             </li>
             <li>
@@ -55,7 +63,7 @@
             </li>
             <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
             <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-            <li class="wd-active">
+            <li>
               <a href="/Kanbas/Courses/Assignments/screen.html">
                 Assignments</a
               >
@@ -155,24 +163,27 @@
             </li>
           </ul>
         </div>
-      <div class="flex-grow-0 me-2" style="width: 250px">
-        <h4>Course Status</h4>
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <button>UnPublish</button>
-              </td>
-              <td>
-                <button>Published</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <button>Import Existing Content</button>
-        <br />
-        <button>Import From Commons</button>
-      </div>
+        <div class="flex-grow-0 me-2 d-none d-lg-block" style="width: 250px">
+            <h3>Course Status</h3>
+            <div class="d-flex">
+                <button class="me-2">Unpublish <i class="fa fa-ban"></i></button>
+                <button style="background-color: rgb(94, 195, 94);">Publish <i class="fa fa-check-circle-o"></i></button>
+            </div>
+            <button>Import Existing Content <i class="fa fa-file"></i></button><br>
+            <button>Import From Commons <i class="fa fa-cloud-download"></i></button><br>
+            <button>Choose Home Page <i class="fa fa-thumbs-up"></i></button><br>
+            <br>
+            <h3>To Do</h3>
+            <hr>
+            <ul class="wd-navigation">
+                <li> <a href="/kanbas/courses/grades/screen.html">A1</a></li>
+            </ul>
+            <h3>Coming Up</h3>
+            <hr>
+            <ul class="wd-navigation">
+                <li><a href="/kanbas/courses/assignments/screen.html">A2</a></li>
+            </ul>
+        </div>
     </div>
   </body>
 </html>
