@@ -1,5 +1,3 @@
-import exp from "constants";
-
 function TeneraryOperator() {
     let loggedIn = true;
     return (
