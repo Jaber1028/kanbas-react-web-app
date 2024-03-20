@@ -4,7 +4,7 @@ import { HiMiniBars3 } from "react-icons/hi2";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
-import * as db from "../Database";
+
 function Courses({ courses }: { courses: any[]; }) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
