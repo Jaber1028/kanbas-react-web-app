@@ -23,4 +23,13 @@
   color: red;
   text-decoration: none;
 }
+.container {
+  display: inline-flex;
+  justify-content: center;
+}
+.inline-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
